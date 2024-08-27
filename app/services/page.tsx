@@ -6,7 +6,7 @@ const Categories = () => {
 			<section className="bg-gray-50">
 				<div className="sm:px-6 max-w-7xl px-2 pb-5">
 					<h2 className="text-xl text-black font-black py-3 sticky top-0 bg-white z-10">
-						Categories
+						Services
 					</h2>
 					<div className="grid max-w-md grid-cols-1 gap-6 px-4">
 						<div className="overflow-hidden bg-white rounded shadow">
