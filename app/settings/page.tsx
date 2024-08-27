@@ -11,7 +11,7 @@ const Settings = () => {
 
 					<div className="space-y-2">
 						{/* Button 1 */}
-						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black focus:outline-none hover:bg-gray-200">
+						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black">
 							Account
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const Settings = () => {
 						</button>
 
 						{/* Button 2 */}
-						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black focus:outline-none hover:bg-gray-200">
+						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black">
 							Notifications
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const Settings = () => {
 						</button>
 
 						{/* Button 3 */}
-						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black focus:outline-none hover:bg-gray-200">
+						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black">
 							Privacy
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const Settings = () => {
 						</button>
 
 						{/* Button 4 */}
-						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black focus:outline-none hover:bg-gray-200">
+						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black">
 							Help & Support
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const Settings = () => {
 						</button>
 
 						{/* Button 5 */}
-						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-red-500 focus:outline-none hover:bg-gray-200">
+						<button className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-red-500">
 							Sign Out
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
