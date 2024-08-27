@@ -5,7 +5,7 @@ const ServiceProvidersProfile = () => {
 		<>
 			<section className="pt-16 bg-[#ffffffe4]">
 				<div className="w-full px-4 mx-auto">
-					<div className="relative flex flex-col min-w-0 break-words bg-[#f8f8f8] w-full mb-6 shadow-xl rounded-lg mt-16">
+					<div className="relative flex flex-col min-w-0 break-words bg-[#f8f8f8] w-full shadow-xl rounded-lg mt-16">
 						<div className="px-6">
 							<div className="flex flex-wrap justify-center relative">
 								<div className="w-full px-4 flex justify-center">
