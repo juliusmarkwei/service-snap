@@ -7,6 +7,7 @@ const nextConfig = {
 			"cdn.rareblocks.xyz",
 			"i.pinimg.com",
 			"demos.creative-tim.com",
+			"i.pravatar.cc",
 		],
 	},
 };
