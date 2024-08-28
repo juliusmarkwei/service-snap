@@ -14,8 +14,8 @@ const Chat = () => {
 	return (
 		<>
 			<div className="bg-gray-100 h-screen flex flex-col max-w-lg mx-auto">
-				<div className="bg-blue-500 p-4 text-white justify-center grid grid-cols-10 items-center">
-					<button className="hover:bg-blue-400 rounded-md p-1 col-span-1">
+				<div className="bg-blue-500 p-4 text-white justify-center grid grid-cols-12 items-center">
+					<button className="rounded-md p-1 col-span-1">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -32,12 +32,12 @@ const Chat = () => {
 						</svg>
 					</button>
 
-					<span className="col-span-8 text-center">
-						Julius Markwei
+					<span className="col-span-9 text-center font-bold">
+						@juliusmarkwei
 					</span>
 					<button
 						id="login"
-						className="hover:bg-blue-400 rounded-md col-span-1 flex justify-end"
+						className="rounded-md col-span-2 flex justify-end"
 					>
 						<div className="relative w-12 h-12">
 							<Image
