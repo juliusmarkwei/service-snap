@@ -3,7 +3,7 @@ import Image from "next/image";
 const Categories = () => {
 	return (
 		<>
-			<section className="bg-gray-50">
+			<section className="bg-gray-50 min-h-screen h-auto">
 				<div className="sm:px-6 max-w-7xl px-2 pb-5">
 					<h2 className="text-xl text-black font-black py-3 sticky top-0 bg-white z-10">
 						Services

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const ForgotPassword = () => {
 	return (
 		<>
-			<section className="bg-white h-screen">
+			<section className="bg-white min-h-screen h-auto">
 				<div className="flex items-center justify-center py-10 bg-white">
 					<div className="w-full max-w-xs mt-[30%]">
 						<div className="mb-[20%] flex flex-col gap-3">
