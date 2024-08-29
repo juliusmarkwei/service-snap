@@ -8,6 +8,7 @@ const nextConfig = {
 			"i.pinimg.com",
 			"demos.creative-tim.com",
 			"i.pravatar.cc",
+			"mdbcdn.b-cdn.net",
 		],
 	},
 };
