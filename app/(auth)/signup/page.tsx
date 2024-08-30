@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import toast from "react-hot-toast";
 
 const SignUp = () => {
 	const [avatar, setAvatar] = useState<string | ArrayBuffer | null>();
@@ -15,6 +17,11 @@ const SignUp = () => {
 			};
 			reader.readAsDataURL(file);
 		}
+	};
+
+	const handleSignUp = async (event: any) => {
+		event.preventDefault();
+		toast.success("Sign Up successful🎂", { duration: 2000 });
 	};
 
 	return (
@@ -83,7 +90,7 @@ const SignUp = () => {
 										<select
 											name="role"
 											id="role"
-											className="block w-full px-4 py-3 text-gray-700 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:border-blue-600 focus:bg-white appearance-none"
+											className="block w-full p-5 text-gray-700 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:border-blue-600 focus:bg-white appearance-none"
 											style={{
 												backgroundImage: `url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke=%27currentColor%27%3E%3Cpath strokeLinecap=%27round%27 strokeLinejoin=%27round%27 strokeWidth=%271.5%27 d=%27M19 9l-7 7-7-7%27 /%3E%3C/svg%3E')`,
 												backgroundPosition:
@@ -150,6 +157,7 @@ const SignUp = () => {
 								<div>
 									<button
 										type="submit"
+										onClick={handleSignUp}
 										className="inline-flex items-center justify-center w-full px-4 py-5 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full focus:outline-none focus:bg-blue-700"
 									>
 										Sign Up
@@ -158,15 +166,15 @@ const SignUp = () => {
 							</div>
 						</form>
 
-						<p className="text-lg text-gray-600 flex gap-5 mt-5 text-center">
+						<p className="text-base font-medium text-gray-600 flex gap-5 mt-5 text-center justify-center">
 							<span>Already have an account?</span>
-							<a
-								href="#"
+							<Link
+								href="/login"
 								title=""
-								className="text-lg text-blue-600 transition-all duration-200 hover:underline focus:text-blue-700 underline"
+								className="text-blue-600 transition-all duration-200 focus:text-blue-700 underline"
 							>
 								Login
-							</a>
+							</Link>
 						</p>
 					</div>
 				</div>

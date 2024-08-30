@@ -1,7 +1,20 @@
-import Image from "next/image";
-import React from "react";
+"use client";
+
+import Link from "next/link";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
+	const router = useRouter();
+
+	const handleLogin = async (event: any) => {
+		event.preventDefault();
+		router.push("/services");
+		toast.success("Login successful🎂", {
+			duration: 2000,
+		});
+	};
+
 	return (
 		<>
 			<section className="bg-white min-h-screen h-auto">
@@ -12,7 +25,7 @@ const Login = () => {
 								Sign in to Continue
 							</h2>
 
-							<form action="#" method="POST" className="mt-12">
+							<form className="mt-12">
 								<div className="space-y-5">
 									<div>
 										<div className="mt-2.5">
@@ -35,20 +48,21 @@ const Login = () => {
 												placeholder="Password"
 												className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
 											/>
-											<a
-												href="#"
+											<Link
+												href="/forgot-password"
 												title=""
 												className="text-sm font-medium my-3 text-blue-600 flex justify-end focus:text-blue-700 underline"
 											>
 												{" "}
 												Forgot password?{" "}
-											</a>
+											</Link>
 										</div>
 									</div>
 
 									<div>
 										<button
 											type="submit"
+											onClick={handleLogin}
 											className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
 										>
 											Log in
@@ -92,15 +106,15 @@ const Login = () => {
 									Sign in with Facebook
 								</button>
 							</div>
-							<p className="text-sm text-gray-600 flex gap-2 mt-5 justify-between">
+							<p className="text-base font-medium text-gray-600 flex gap-2 mt-5 justify-center">
 								<h3>Don’t have an account? </h3>
-								<a
-									href="#"
+								<Link
+									href="/signup"
 									title=""
-									className="font- text-sm text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700 underline"
+									className="text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700 underline"
 								>
-									Create a free account
-								</a>
+									Create account
+								</Link>
 							</p>
 						</div>
 					</div>

@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+"use client";
+
+import Link from "next/link";
+import toast from "react-hot-toast";
 
 const ForgotPassword = () => {
+	const handleLogin = async (event: any) => {
+		event.preventDefault();
+		toast.success("Password reset link sent to your email", {
+			duration: 2000,
+		});
+	};
+
 	return (
 		<>
 			<section className="bg-white min-h-screen h-auto">
-				<div className="flex items-center justify-center py-10 bg-white">
-					<div className="w-full max-w-xs mt-[30%]">
+				<div className="flex items-center justify-center py-10 px-5 bg-white">
+					<div className="w-full max-w-sm mt-[25%]">
 						<div className="mb-[20%] flex flex-col gap-3">
 							<h2 className="text-3xl font-bold leading-tight text-black text-center">
 								Reset Your Password
@@ -16,7 +26,7 @@ const ForgotPassword = () => {
 							</p>
 						</div>
 
-						<form action="#" method="POST" className="mt-8">
+						<form className="mt-8">
 							<div className="space-y-5">
 								<div>
 									<div className="mt-2.5">
@@ -33,6 +43,7 @@ const ForgotPassword = () => {
 								<div>
 									<button
 										type="submit"
+										onClick={handleLogin}
 										className="inline-flex items-center justify-center w-full px-4 py-5 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-full focus:outline-none"
 									>
 										Confirm
@@ -41,15 +52,15 @@ const ForgotPassword = () => {
 							</div>
 						</form>
 
-						<p className="text-lg text-gray-600 flex gap-5 mt-5 text-center">
+						<p className="text-bas text-gray-600 flex gap-5 mt-5 text-center justify-center">
 							<span>Remember your password?</span>
-							<a
-								href="#"
+							<Link
+								href="/login"
 								title=""
-								className="text-lg text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700 underline"
+								className="text-blue-600 transition-all duration-200 hover:text-blue-700 hover:underline focus:text-blue-700 underline"
 							>
 								Login
-							</a>
+							</Link>
 						</p>
 					</div>
 				</div>
