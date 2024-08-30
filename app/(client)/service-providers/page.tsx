@@ -5,9 +5,23 @@ const Services = () => {
 		<>
 			<section className="bg-gray-50 min-h-screen h-auto">
 				<div className="sm:px-6 max-w-7xl px-2 pb-5">
-					<h2 className="text-xl text-black font-black py-3 sticky top-0 bg-white z-10">
-						Carpentary
-					</h2>
+					<div>
+						<h2 className="text-xl text-black font-black py-3 sticky top-0 bg-white z-10 flex items-center gap-3">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								className="size-5 text-black"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+							Carpentary
+						</h2>
+					</div>
 					<div className="grid max-w-md grid-cols-2 gap-2">
 						<div className="overflow-hidden bg-white rounded shadow h-[240px]">
 							<div className="h-[200px]">
