@@ -66,8 +66,20 @@ const SignUp = () => {
 								<div>
 									<div className="mt-2.5">
 										<input
+											type="text"
+											name="text"
+											id="location"
+											placeholder="Location"
+											className="block w-full p-5 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+										/>
+									</div>
+								</div>
+
+								<div>
+									<div className="mt-2.5">
+										<input
 											type="tel"
-											name="phone"
+											name=""
 											id="phone"
 											placeholder="Phone number"
 											className="block w-full p-5 text-black placeholder-gray-500 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"

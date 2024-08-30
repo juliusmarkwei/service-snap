@@ -8,7 +8,7 @@ const ProviderProfile = () => {
 				<div className="container mx-auto pb-3 h-full">
 					<div className="flex justify-center items-center h-full">
 						<div className="w-full max-w-lg">
-							<div className="bg-white shadow-sm rounded-lg overflow-hidden">
+							<div className="bg-white shadow-sm overflow-hidden">
 								<div className="bg-blue-300 h-[220px] flex items-end p-4">
 									<div className="flex-shrink-0">
 										<Image
@@ -24,7 +24,7 @@ const ProviderProfile = () => {
 									</div>
 									<div className="ml-4">
 										<h5 className="text-gray-900 text-2xl flex items-center">
-											Andy Horwitz
+											Sandra Horwitz
 											<Image
 												src={Verified}
 												width={24}
