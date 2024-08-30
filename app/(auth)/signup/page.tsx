@@ -83,7 +83,14 @@ const SignUp = () => {
 										<select
 											name="role"
 											id="role"
-											className="block w-full p-5 text-black transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:border-blue-600 focus:bg-white"
+											className="block w-full px-4 py-3 text-gray-700 transition-all duration-200 border border-gray-200 rounded-full bg-gray-50 focus:border-blue-600 focus:bg-white appearance-none"
+											style={{
+												backgroundImage: `url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 24 24%27 stroke=%27currentColor%27%3E%3Cpath strokeLinecap=%27round%27 strokeLinejoin=%27round%27 strokeWidth=%271.5%27 d=%27M19 9l-7 7-7-7%27 /%3E%3C/svg%3E')`,
+												backgroundPosition:
+													"right 1rem center",
+												backgroundSize: "1.5rem",
+												backgroundRepeat: "no-repeat",
+											}}
 										>
 											<option value="">Role</option>
 											<option value="user">User</option>
