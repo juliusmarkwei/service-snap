@@ -1,6 +1,23 @@
 import Image from "next/image";
 
 const ServiceProviders = () => {
+	const _rating = 70;
+	const getYellowStars = (rating: number) => {
+		if (rating >= 0 && rating <= 5) {
+			return 1;
+		} else if (rating >= 6 && rating <= 15) {
+			return 2;
+		} else if (rating >= 16 && rating <= 30) {
+			return 3;
+		} else if (rating >= 31 && rating <= 50) {
+			return 4;
+		} else if (rating > 50) {
+			return 5;
+		}
+		return 0;
+	};
+
+	const yellowStars = getYellowStars(_rating);
 	return (
 		<>
 			<section className="pt-16 bg-[#ffffffe4] min-h-screen h-auto">
@@ -113,58 +130,27 @@ const ServiceProviders = () => {
 								{/* rate */}
 								<div className="flex gap-2 py-1 justify-center">
 									<div className="flex items-center w-[100px] h-[20px]">
-										{/* Star 1 */}
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											fill="currentColor"
-											viewBox="0 0 24 24"
-											className="w-5 h-5 text-yellow-400"
-										>
-											<path d="M12 17.27l5.18 3.15-1.39-6.06L22 9.24l-6.19-.53L12 2 8.19 8.71 2 9.24l4.21 4.12-1.39 6.06L12 17.27z" />
-										</svg>
-
-										{/* Star 2 */}
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											fill="currentColor"
-											viewBox="0 0 24 24"
-											className="w-5 h-5 text-yellow-400"
-										>
-											<path d="M12 17.27l5.18 3.15-1.39-6.06L22 9.24l-6.19-.53L12 2 8.19 8.71 2 9.24l4.21 4.12-1.39 6.06L12 17.27z" />
-										</svg>
-
-										{/* Star 3 */}
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											fill="currentColor"
-											viewBox="0 0 24 24"
-											className="w-5 h-5 text-yellow-400"
-										>
-											<path d="M12 17.27l5.18 3.15-1.39-6.06L22 9.24l-6.19-.53L12 2 8.19 8.71 2 9.24l4.21 4.12-1.39 6.06L12 17.27z" />
-										</svg>
-
-										{/* Star 4 */}
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											fill="currentColor"
-											viewBox="0 0 24 24"
-											className="w-5 h-5 text-yellow-400"
-										>
-											<path d="M12 17.27l5.18 3.15-1.39-6.06L22 9.24l-6.19-.53L12 2 8.19 8.71 2 9.24l4.21 4.12-1.39 6.06L12 17.27z" />
-										</svg>
-
-										{/* Star 5 */}
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											fill="currentColor"
-											viewBox="0 0 24 24"
-											className="w-5 h-5 text-yellow-400"
-										>
-											<path d="M12 17.27l5.18 3.15-1.39-6.06L22 9.24l-6.19-.53L12 2 8.19 8.71 2 9.24l4.21 4.12-1.39 6.06L12 17.27z" />
-										</svg>
+										{Array.from(
+											{ length: 5 },
+											(_, index) => (
+												<svg
+													key={index}
+													xmlns="http://www.w3.org/2000/svg"
+													fill="currentColor"
+													viewBox="0 0 24 24"
+													className={`w-5 h-5 ${
+														index < yellowStars
+															? "text-yellow-400"
+															: "text-gray-300"
+													}`}
+												>
+													<path d="M12 17.27l5.18 3.15-1.39-6.06L22 9.24l-6.19-.53L12 2 8.19 8.71 2 9.24l4.21 4.12-1.39 6.06L12 17.27z" />
+												</svg>
+											)
+										)}
 									</div>
 									<span className="text-gray-600">
-										(123 verified ratings)
+										({_rating} verified ratings)
 									</span>
 								</div>
 

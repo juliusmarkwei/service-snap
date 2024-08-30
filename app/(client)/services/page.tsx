@@ -319,13 +319,12 @@ const Categories = () => {
 							</div>
 						</div>
 
-						{/* Use this for the dynamic categoeries */}
 						<div className="overflow-hidden bg-white rounded shadow">
 							<div className="relative h-[320px] bg-white shadow-lg rounded-md overflow-hidden">
 								<a href="#" title="" className="block h-[75%]">
 									<Image
 										className="object-cover w-full h-full"
-										src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-2.jpg"
+										src="https://i.pinimg.com/236x/fd/bc/f1/fdbcf1ff478bc48c44bf9d78a8b885b3.jpg"
 										alt=""
 										width={500}
 										height={500}
@@ -335,7 +334,7 @@ const Categories = () => {
 								<div className="absolute top-4 left-4">
 									<span className="px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full">
 										{" "}
-										Lorem{" "}
+										Software Engineering{" "}
 									</span>
 								</div>
 								<div className="px-2">
