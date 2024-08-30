@@ -4,11 +4,10 @@ const Notification = () => {
 	return (
 		<>
 			<section className="bg-white min-h-screen h-auto px-2 pb-2">
-				<h1 className="text-3xl font-bold leading-tight text-black mb-3 px-4 bg-white sticky z-20 top-0 pt-2">
+				<h1 className="text-2xl font-bold leading-tight text-black mb-3 px-4 bg-white sticky z-20 top-0 pt-2">
 					Notification
 				</h1>
 
-				{/* Repeat your notification items as needed */}
 				<div className="w-full h-auto relative mb-1">
 					<div className="bg-slate-900 text-slate-100 px-5 py-3.5 rounded-lg shadow hover:shadow-xl max-w-sm mx-auto transform hover:-translate-y-[0.125rem] transition duration-100 ease-linear">
 						<div className="flex items-center mt-2 rounded-lg py-1 cursor-pointer">
