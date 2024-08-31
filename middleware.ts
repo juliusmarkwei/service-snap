@@ -10,8 +10,7 @@ export function middleware(req: NextRequest) {
 		return NextResponse.redirect(new URL("/login", req.url));
 	}
 
-	// Redirect non-mobile devices to "not-supported" page for all routes except "/not-supported"
-	if (!isMobile && pathname !== "/not-supported") {
+	if (!isMobile) {
 		return NextResponse.redirect(new URL("/not-supported", req.url));
 	}
 
@@ -20,5 +19,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-	matcher: ["/((?!not-supported).*)"], // Apply middleware to all routes except "not-supported"
+	matcher: ["/((?!not-supported).*)"],
 };
