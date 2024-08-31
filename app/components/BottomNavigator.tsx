@@ -16,7 +16,7 @@ const BottomNavigator = () => {
 							viewBox="0 0 24 24"
 							strokeWidth="1.5"
 							stroke="currentColor"
-							className="size-9 focus:text-blue-400"
+							className="size-8 focus:text-blue-400"
 						>
 							<path
 								strokeLinecap="round"
@@ -26,7 +26,7 @@ const BottomNavigator = () => {
 						</svg>
 					</Link>
 					<Link
-						href="/chat"
+						href="/chat-list"
 						className="flex flex-col items-center text-gray-600 hover:text-blue-600"
 					>
 						<svg
@@ -35,7 +35,7 @@ const BottomNavigator = () => {
 							viewBox="0 0 24 24"
 							strokeWidth={1.5}
 							stroke="currentColor"
-							className="size-9 focus:text-blue-400"
+							className="size-8 focus:text-blue-400"
 						>
 							<path
 								strokeLinecap="round"
@@ -54,7 +54,7 @@ const BottomNavigator = () => {
 							viewBox="0 0 24 24"
 							strokeWidth="1.5"
 							stroke="currentColor"
-							className="size-9 focus:text-blue-400"
+							className="size-8 focus:text-blue-400"
 						>
 							<path
 								strokeLinecap="round"
@@ -73,7 +73,7 @@ const BottomNavigator = () => {
 							viewBox="0 0 24 24"
 							strokeWidth="1.5"
 							stroke="currentColor"
-							className="size-9 focus:text-blue-400"
+							className="size-8 focus:text-blue-400"
 						>
 							<path
 								strokeLinecap="round"

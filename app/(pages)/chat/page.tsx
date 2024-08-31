@@ -3,14 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import toast from "react-hot-toast";
-import BottomNavigator from "@/app/components/BottomNavigator";
 
 const Chat = () => {
 	return (
 		<>
 			<div className="bg-gray-100 h-screen flex flex-col max-w-lg mx-auto">
 				<div className="bg-blue-500 p-4 text-white justify-center grid grid-cols-12 items-center">
-					<Link href="/service" className="rounded-md p-1 col-span-1">
+					<Link
+						href="/chat-list"
+						className="rounded-md p-1 col-span-1"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -143,7 +145,7 @@ const Chat = () => {
 					</div>
 				</div>
 
-				<div className="bg-white p-4 flex items-center sticky bottom-[70px] z-10">
+				<div className="bg-white p-4 flex items-center sticky bottom-0 z-10">
 					<input
 						type="text"
 						placeholder="Type your message..."
@@ -173,7 +175,6 @@ const Chat = () => {
 						</svg>
 					</button>
 				</div>
-				<BottomNavigator />
 			</div>
 		</>
 	);

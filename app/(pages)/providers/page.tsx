@@ -32,9 +32,9 @@ const Services = () => {
 							href="/service"
 							className="overflow-hidden bg-white rounded shadow h-[240px]"
 						>
-							<div className="h-[200px]">
+							<div className="h-[240px]">
 								<div>
-									<span className="block h-[50%]">
+									<span className="block h-[135px]">
 										<Image
 											className="object-cover w-full h-full"
 											src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/2/blog-post-1.jpg"

@@ -5,9 +5,9 @@ import BottomNavigator from "@/app/components/BottomNavigator";
 const Categories = () => {
 	return (
 		<>
-			<section className="bg-gray-50 min-h-screen h-auto">
+			<section className="bg-gray-50 mb-16 min-h-screen h-auto">
 				<div className="sm:px-6 max-w-7xl px-2 pb-5">
-					<h2 className="text-3xl text-black font-black py-3 sticky top-0 bg-white z-10">
+					<h2 className="text-3xl text-black font-bold py-3 sticky top-0 px-2 bg-white z-10">
 						Services
 					</h2>
 					<div className="grid max-w-md grid-cols-1 gap-6 px-4">
@@ -29,7 +29,7 @@ const Categories = () => {
 										</span>
 									</div>
 									<div className="px-2">
-										<p className="text-sm font-medium text-gray-600 my-3">
+										<p className="text-sm font-medium text-gray-600 my-4">
 											Whether it&apos;s{" "}
 											<span className="font-semibold font-sans">
 												custom furniture
@@ -43,8 +43,7 @@ const Categories = () => {
 												home renovations
 											</span>
 											, skilled carpenters bring your
-											vision to life with precision and
-											craftsmanship.
+											vision to life with precision.
 										</p>
 									</div>
 								</div>
