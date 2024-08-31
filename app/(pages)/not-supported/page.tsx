@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const NotSupported = () => {
 	return (
-		<div className="h-screen w-dvw bg-white flex flex-col gap-2 justify-center items-center px-5">
+		<div className="h-dvh w-dvw bg-white flex flex-col gap-2 justify-center items-center px-5">
 			<Head>
 				<title>Device Not Supported</title>
 				<meta
@@ -18,7 +18,6 @@ const NotSupported = () => {
 				width={250}
 				height={250}
 			/>
-			{/* <h1 className="text-black text-4xl font-bold">Not Supported</h1> */}
 			<p className="text-blue-500 text-xl font-medium font-serif text-center">
 				This application is only accessible on mobile devices.
 			</p>
