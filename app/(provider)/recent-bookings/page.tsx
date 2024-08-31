@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Categories = () => {
 	return (
@@ -7,17 +8,23 @@ const Categories = () => {
 				<div className="sm:px-6 max-w-7xl px-2 pb-5">
 					{/* Sticky Heading Container */}
 					<div className="sticky top-0 bg-white z-10">
-						<div className="flex items-center py-2 gap-2 h-[75px]">
-							<div className="flex items-center">
-								<div className="relative w-14 h-14">
-									<Image
-										src="https://i.pinimg.com/236x/3e/1d/ce/3e1dced892a602d93039ebc2a150c35f.jpg"
-										alt="Profile Image"
-										className="rounded-full"
-										layout="fill"
+						<div className="flex items-center py-2 gap-4 h-[75px]">
+							<Link href="/settings">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									strokeWidth={1.5}
+									stroke="currentColor"
+									className="size-6 text-black ml-2"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
 									/>
-								</div>
-							</div>
+								</svg>
+							</Link>
 							<div className="flex items-center gap-2 w-[90%]">
 								<input
 									type="search"
@@ -26,7 +33,7 @@ const Categories = () => {
 								/>
 							</div>
 						</div>
-						<h2 className="text-xl text-black font-black pb-3">
+						<h2 className="text-3xl text-black font-black pb-3">
 							Recent Bookings
 						</h2>
 					</div>

@@ -55,7 +55,7 @@ const Settings = () => {
 
 							{/* Button 3 */}
 							<Link
-								href="#"
+								href="https://www.privacypolicies.com/live/8e097a47-3ffa-4376-b38b-b3c750bcc564"
 								className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black"
 							>
 								Privacy
@@ -75,7 +75,7 @@ const Settings = () => {
 
 							{/* Button 4 */}
 							<Link
-								href="#"
+								href="mailto:juliussingh23k@gmail.com?subject=Help%20and%20Support"
 								className="flex items-center justify-between w-full px-4 py-4 text-lg font-semibold text-black"
 							>
 								Help & Support

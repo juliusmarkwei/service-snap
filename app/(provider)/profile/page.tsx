@@ -13,18 +13,18 @@ const ProviderProfile = () => {
 							<div className="bg-white shadow-sm overflow-hidden">
 								<div className="bg-blue-300 h-[220px] flex items-end p-4">
 									<div className="flex-shrink-0">
-										<Link href="/chat">
+										<Link href="/settings">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												fill="none"
 												viewBox="0 0 24 24"
-												stroke-width="1.5"
+												strokeWidth="1.5"
 												stroke="currentColor"
 												className="size-6 absolute top-4 left-4 text-black"
 											>
 												<path
-													stroke-linecap="round"
-													stroke-linejoin="round"
+													strokeLinecap="round"
+													strokeLinejoin="round"
 													d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
 												/>
 											</svg>

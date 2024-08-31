@@ -23,7 +23,7 @@ const Services = () => {
 							/>
 						</svg>
 
-						<h2 className="text-2xl text-black font-bold py-3">
+						<h2 className="text-3xl text-black font-bold py-3">
 							Carpentary
 						</h2>
 					</Link>

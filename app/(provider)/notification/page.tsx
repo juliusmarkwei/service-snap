@@ -5,7 +5,7 @@ const Notification = () => {
 	return (
 		<>
 			<section className="bg-white min-h-screen h-auto px-2 pb-2">
-				<h1 className="text-2xl font-bold leading-tight text-black mb-3 px-4 bg-white sticky z-20 top-0 pt-2">
+				<h1 className="text-3xl font-bold leading-tight text-black mb-3 px-4 bg-white sticky z-20 top-0 pt-2">
 					Notification
 				</h1>
 

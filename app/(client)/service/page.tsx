@@ -1,7 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import CreateBooking from "@/app/components/bottom-sheet/CreateBooking";
+import toast from "react-hot-toast";
 
 const ServiceProviders = () => {
+	const [showBtSheet, setShowBtSheet] = useState(false);
+
 	const _rating = Math.floor(Math.random() * 100);
 	const getYellowStars = (rating: number) => {
 		if (rating >= 0 && rating <= 5) {
@@ -19,6 +26,11 @@ const ServiceProviders = () => {
 	};
 
 	const yellowStars = getYellowStars(_rating);
+
+	const handleCreateBooking = () => {
+		setShowBtSheet(true);
+	};
+
 	return (
 		<>
 			<section className="bg-[#ffffffe4] min-h-screen h-auto">
@@ -27,13 +39,13 @@ const ServiceProviders = () => {
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
-						stroke-width="1.5"
+						strokeWidth="1.5"
 						stroke="currentColor"
 						className="size-6 relative top-4 left-4 text-black"
 					>
 						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
+							strokeLinecap="round"
+							strokeLinejoin="round"
 							d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
 						/>
 					</svg>
@@ -48,6 +60,7 @@ const ServiceProviders = () => {
 											alt="..."
 											width={400}
 											height={300}
+											priority
 											src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg"
 											className="shadow-xl rounded-full w-52 h-52 align-middle border-none absolute left-[19%] -top-24"
 										/>
@@ -92,7 +105,10 @@ const ServiceProviders = () => {
 											</span>
 										</div>
 
-										<div className="mr-4 p-3 text-center flex flex-col items-center gap-1">
+										<div
+											onClick={handleCreateBooking}
+											className="mr-4 p-3 text-center flex flex-col items-center gap-1"
+										>
 											<span className="text-xl font-bold block uppercase tracking-wide text-gray-600">
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -182,6 +198,11 @@ const ServiceProviders = () => {
 										className="border-2 border-gray-300 rounded-xl p-4 w-full focus:outline-none focus:border-blue-500"
 									/>
 									<svg
+										onClick={() =>
+											toast.success(
+												"Review added successfully"
+											)
+										}
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 24 24"
 										fill="currentColor"
@@ -234,7 +255,7 @@ const ServiceProviders = () => {
 								<hr />
 
 								{/* show more */}
-								<div className="text-center">
+								<div className="text-center mb-4">
 									<a
 										href="#"
 										className="text-blue-500 underline"
@@ -247,6 +268,11 @@ const ServiceProviders = () => {
 					</div>
 				</div>
 			</section>
+			{showBtSheet == true ? (
+				<CreateBooking handleOnSubmit={setShowBtSheet} />
+			) : (
+				""
+			)}
 		</>
 	);
 };
