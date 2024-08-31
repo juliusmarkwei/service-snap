@@ -1,6 +1,6 @@
 import React from "react";
 
-const BottomSheet = () => {
+const ManageBooking = () => {
 	return (
 		<>
 			<section className="fixed bottom-0 w-full bg-white h-[30vh] rounded-t-3xl shadow-lg p-3">
@@ -36,4 +36,4 @@ const BottomSheet = () => {
 	);
 };
 
-export default BottomSheet;
+export default ManageBooking;

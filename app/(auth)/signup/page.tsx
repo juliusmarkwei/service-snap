@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import toast from "react-hot-toast";
 
 const SignUp = () => {
 	const [avatar, setAvatar] = useState<string | ArrayBuffer | null>();
+	const router = useRouter();
 
 	const handleFileChange = (event: any) => {
 		const file = event.target.files[0];
@@ -21,6 +23,7 @@ const SignUp = () => {
 
 	const handleSignUp = async (event: any) => {
 		event.preventDefault();
+		router.push("/login");
 		toast.success("Sign Up successful🎂", { duration: 2000 });
 	};
 

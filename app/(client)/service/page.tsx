@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ServiceProviders = () => {
-	const _rating = 70;
+	const _rating = Math.floor(Math.random() * 100);
 	const getYellowStars = (rating: number) => {
 		if (rating >= 0 && rating <= 5) {
 			return 1;
@@ -20,8 +21,24 @@ const ServiceProviders = () => {
 	const yellowStars = getYellowStars(_rating);
 	return (
 		<>
-			<section className="pt-16 bg-[#ffffffe4] min-h-screen h-auto">
-				<div className="w-full px-4 mx-auto">
+			<section className="bg-[#ffffffe4] min-h-screen h-auto">
+				<Link href="/providers">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						className="size-6 relative top-4 left-4 text-black"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+						/>
+					</svg>
+				</Link>
+				<div className="pt-16 w-full px-4 mx-auto">
 					<div className="relative flex flex-col min-w-0 break-words bg-[#f8f8f8] w-full shadow-xl rounded-lg mt-16">
 						<div className="px-4">
 							<div className="flex flex-wrap justify-center relative items-center">
@@ -58,15 +75,17 @@ const ServiceProviders = () => {
 
 										<div className="mr-4 p-3 text-center flex flex-col items-center gap-1">
 											<span className="text-xl font-bold block uppercase tracking-wide text-gray-600">
-												<svg
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 24 24"
-													fill="currentColor"
-													className="size-6 text-black"
-												>
-													<path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
-													<path d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
-												</svg>
+												<Link href="/chat">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 24 24"
+														fill="currentColor"
+														className="size-6 text-black"
+													>
+														<path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
+														<path d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
+													</svg>
+												</Link>
 											</span>
 											<span className="text-sm text-black">
 												Chat

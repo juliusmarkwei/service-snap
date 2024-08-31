@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BottomNavigator from "@/app/components/BottomNavigator";
 
 const Notification = () => {
 	return (
@@ -286,9 +287,8 @@ const Notification = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* Add more notification items here */}
 			</section>
+			<BottomNavigator />
 		</>
 	);
 };
