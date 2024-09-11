@@ -1,4 +1,4 @@
-# ServiceSnap App (Frontend Only)
+# ServiceSnap (Frontend Only)
 
 ServiceSnap is a mobile-friendly platform that enables users to easily access a variety of service providers, including tailors, carpenters, and caterers. **This is a simple frontend application built using React (Next.js)** and **does not include any backend functionality**. The app is designed for mobile use only, ensuring a seamless experience on smartphones.
 
