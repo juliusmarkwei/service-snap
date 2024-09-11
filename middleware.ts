@@ -5,12 +5,13 @@ export function middleware(req: NextRequest) {
 	const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(userAgent);
 	const { pathname } = req.nextUrl;
 
-	// Redirect mobile devices to login page if accessing the root path "/"
-	if (isMobile && pathname === "/") {
+	// Redirect mobile devices accessing the not-supported path to the login page
+	if (isMobile && pathname === "/not-supported") {
 		return NextResponse.redirect(new URL("/login", req.url));
 	}
 
-	if (!isMobile) {
+	// Redirect non-mobile devices to "not-supported" page
+	if (!isMobile && pathname !== "/not-supported") {
 		return NextResponse.redirect(new URL("/not-supported", req.url));
 	}
 
@@ -19,5 +20,6 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-	matcher: ["/((?!not-supported).*)"],
+	// Handle all routes except for the API routes (e.g., /api/*) and static files
+	matcher: ["/((?!api|_next/static|favicon.ico).*)"],
 };

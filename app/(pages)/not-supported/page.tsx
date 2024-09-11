@@ -18,8 +18,13 @@ const NotSupported = () => {
 				width={250}
 				height={250}
 			/>
-			<p className="text-blue-500 text-xl font-medium font-serif text-center">
+			<p className="text-blue-500 text-2xl font-medium font-serif text-center">
 				This application is only accessible on mobile devices.
+				<br />
+				<span className="font-semibold text-base">
+					Hint: Switch to mobile view in your browser’s developer
+					tools to access this page.
+				</span>
 			</p>
 		</div>
 	);

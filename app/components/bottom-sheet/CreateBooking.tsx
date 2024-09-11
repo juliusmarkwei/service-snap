@@ -25,8 +25,6 @@ const CreateBooking = ({ handleOnSubmit }: CBProp) => {
 						Create Booking
 					</h2>
 
-					<hr />
-
 					<div className="space-y-4 w-full">
 						<input
 							type="text"
